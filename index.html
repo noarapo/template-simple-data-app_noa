@@ -9,41 +9,46 @@
 <body>
   <div id="container">
     <div id="main">
-      <h1 class="content">My Data App</h1>
+      <h1 class="content">Noble Prizes</h1>
+      <h2 class = "content">Super cool project</h2>
+      
+      <div class="row">
+        <div class="item meta">
+          <div class="content">
+            <p>Sort</p>
+            <select id="data-sort">
+            <option value="oldest-first">Old to New</option>
+            <option value="newest-first">New to Old</option>
+            </select>
+          </div>    
 
+          <div class="content">
+            <p>Filter</p>
+            <select id="data-filter">
+            <option value="-">All</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="physics">Physics</option>
+            <option value="literature">Literature</option>
+            <option value="peace">Peace</option>
+            <option value="physiology-medicine">Physiology and Medicine</option>
+            </select>
+          </div>  
       <div id="app" class="row">
 
-        <!-- Start example showing the css layout -->
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
 
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-        <!-- End example showing the css layout -->
-
-        <template id="item-template">
+        
+        <!--------------Template start------------> 
+        <!--  didnt work :( -->
+        <template id="data-record-template">
           <div class="item">
-            <div class="content">
-              <h2>Example Heading</h2>
-              <p>Example text.</p>
+            <div class = "content">
+              <h2 class="heading"></h2>
+              <p class="content"></p>
             </div>
           </div>
         </template>
+      
+         <!--------------Template END---------------> 
 
       </div>
     </div>
